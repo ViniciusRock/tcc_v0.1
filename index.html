@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Primeira versão - SE LIGA AÍ, CAVG!</title>
 </head>
+
 <body>
-    
+    <header>
+        <nav>
+            <ul>Home</ul>
+            <ul>Sobre</ul>
+            <ul>Login</ul>
+            <ul>Cadastro</ul>
+            <ul></ul>
+        </nav>
+    </header>
+    <section>
+        <form action="cadastro.php">
+            <label>Matricula <input type="text" name="matricula" id="matricula"></label>
+            <label>Cpf <input type="text" name="cpf" id="cpf"></label>
+            <label>Nome <input type="text" name="nome" id="nome"></label>
+            <label>Email <input type="email" name="email" id="email"></label>
+            <label>Celular <input type="text" name="celular" id="celular"></label>
+            <label>Senha<input type="password" name="senha" id="senha"></label>
+            <!-- Fazer uma validação no campo de id password para ver se as senhas conferem antes de enviar pro banco :)-->
+            <label>Confirmação de Senha<input type="password" name="senha" id="senha"></label>
+            <label>Curso <input type="text" name="senha" id="senha"></label>
+            <label>Foto <input type="file" name="foto" id="foto"></label>
+        </form>
+    </section>
+    <aside>
+
+    </aside>
+    <footer>
+        Desenvolvido no/para o CAVG!
+    </footer>
+    <script src="./js/index.js"></script>
 </body>
+
 </html>

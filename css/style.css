@@ -1,1 +1,24 @@
-/*USAR FLEXBOX PARA O NAVBAR, CONTEÚDOS, SECTION, ARTICLE*/
+/*1.USAR FLEXBOX PARA O NAVBAR, CONTEÚDOS, SECTION, ARTICLE
+
+2.CRIAR flexbox para tela de menu de opções, login e cadastro
+3.COLOCAR AS fotos do cavg
+-> entrada
+-> CAE
+-> DIREN
+-> Estágios
+
+3.Quebra de linha e de inputs
+
+4.Fazer validação em todos os campos para ver se todos estão preenchidos antes de enviar pro banco
+
+5.Deixar o footer rolando junto com a página
+*/
+
+
+
+body{
+    background-color: rgb(50, 244, 131);
+    background-image:url("/img/logo.png");
+    background-repeat: no-repeat;
+    
+}
