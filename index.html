@@ -12,32 +12,38 @@
 <body>
     <header>
         <nav>
-            <ul>Home</ul>
-            <ul>Sobre</ul>
-            <ul>Login</ul>
-            <ul>Cadastro</ul>
-            <ul></ul>
+            <a href=""><ul>Home</ul></a>
+            <a href=""><ul>Sobre</ul></a>
+            <a href=""><ul>Login</ul></a>
+            <a href=""> <ul>Cadastro</ul></a>
+            <a href=""><ul></ul></a>
         </nav>
     </header>
     <section>
-        <form action="cadastro.php">
-            <label>Matricula <input type="text" name="matricula" id="matricula"></label>
-            <label>Cpf <input type="text" name="cpf" id="cpf"></label>
-            <label>Nome <input type="text" name="nome" id="nome"></label>
-            <label>Email <input type="email" name="email" id="email"></label>
-            <label>Celular <input type="text" name="celular" id="celular"></label>
-            <label>Senha<input type="password" name="senha" id="senha"></label>
+        <h1>Cadastro</h1>
+    </section>
+    <section>
+        <form action="cadastro.php" method="POST">
+            <label>Matricula <input type="text" name="matricula" id="matricula"></label> <br>
+            <label>Cpf <input type="text" name="cpf" id="cpf" maxlength="14" onkeyup="validacpf()"></label> <br>
+            <label>Nome <input type="text" name="nome" id="nome"></label> <br>
+            <label>Email <input type="email" name="email" id="email"></label> <br>
+            <label>Data:<input type="text" name="data" id="data" maxlength="10"></label><br>
+            <label>Celular <input type="text" name="celular" id="celular" maxlength="15"></label><br>
+            <label>Senha<input type="password" name="senha" id="senha"></label><br>
             <!-- Fazer uma validação no campo de id password para ver se as senhas conferem antes de enviar pro banco :)-->
-            <label>Confirmação de Senha<input type="password" name="senha" id="senha"></label>
-            <label>Curso <input type="text" name="senha" id="senha"></label>
-            <label>Foto <input type="file" name="foto" id="foto"></label>
+            <label>Confirmação de Senha<input type="password" name="senha" id="senha"></label><br>
+            <label>Curso <input type="text" name="senha" id="senha"></label><br>
+            <label>Foto <input type="file" name="foto" id="foto"></label><br>
+
+            <input type="submit" value="Enviar">
         </form>
     </section>
     <aside>
 
     </aside>
     <footer>
-        Desenvolvido no/para o CAVG!
+        Desenvolvido para o CAVG!
     </footer>
     <script src="./js/index.js"></script>
 </body>
