@@ -14,36 +14,12 @@
 
 <body>
     <div class="form">
-        <form method="POST" action="./php/cadastro.php">
-            <label>
-                Nome completo:
-                <div class="input">
-                    <i class="fa-regular fa-user"></i>
-                    <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
-                </div>
-            </label>
-
-            <label>
-                Celular:
-                <div class="input">
-                    <i class="fa-solid fa-phone"></i>
-                    <input type="text" id="celular" name="celular" placeholder="Celular" maxlength="14" required>
-                </div>
-            </label>
-
+        <form method="POST" action="./php/login.php">
             <label>
                 Nº matrícula:
                 <div class="input">
                     <i class="fa-regular fa-rectangle-list"></i>
                     <input type="text" id="matricula" name="matricula" placeholder="Matrícula" required>
-                </div>
-            </label>
-
-            <label>
-                Email
-                <div class="input">
-                    <i class="fa-regular fa-envelope"></i>
-                    <input type="text" id="email" name="email" placeholder="Email" required>
                 </div>
             </label>
 
@@ -56,9 +32,11 @@
             </label>
 
             <div id="botao">
-                <button type="submit">Cadastrar</button>
+                <button type="submit">Entrar</button>
             </div>
-            <span class="footer">Não tem uma conta? <a href="./login.html">Faça Login</a></h2>
+            <span class="footer">Não tem uma conta?
+                <a href="./index.html">Crie uma!</a>
+            </span>
         </form>
 
     </div>

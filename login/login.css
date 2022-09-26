@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to left, #c6ffdd, #fbd786, #f7797d);
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.btn {
+  margin-left: 5px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: none;
+}
+
+.sidenav {
+  padding: 10px 20px;
+  width: 0;
+  transition-delay: 0.3s;
+  transition: 0.5s ease-in-out;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
+}
+
+
+.active .sidenav {
+  transition: 0.5s ease-in-out;
+  height: 100vh;
+  width: 220px;
+  position: fixed;
+  background: linear-gradient(150.46deg,
+      rgba(255, 255, 255, 0.5) -12.61%,
+      rgba(255, 255, 255, 0.25) 110.1%);
+  padding: 10px 0;
+}
+
+.items {
+  padding: 20px 0;
+  display: none;
+  padding-top: 25vh;
+}
+
+.active .items {
+  display: block;
+}
+
+.items ul {
+  list-style: none;
+}
+
+.items ul li {
+  background: rgba(255, 255, 255, 0.2);
+  margin: 10px 0px 0px -2px;
+  height: 40px;
+  transition: 0.5s ease-in;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  line-height: 40px;
+}
+
+.items li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0 10px;
+  letter-spacing: 1px;
+
+}
