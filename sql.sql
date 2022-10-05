@@ -5,6 +5,18 @@ CREATE TABLE aluno(
     nome VARCHAR(255) NOT NULL,
     celular VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL,
-    senha VARCHAR(255) NOT NULL
+    senha VARCHAR(255) NOT NULL,
+    -- tipo VARCHAR(255) NOT NULL
 );
 
+CREATE TABLE professor(
+    siape VARCHAR(255) PRIMARYKEY,
+    nome VARCHAR(255) NOT NULL,
+    celular VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    senha VARCHAR(255) NOT NULL
+)
+
+CREATE TABLE ta(
+
+)
