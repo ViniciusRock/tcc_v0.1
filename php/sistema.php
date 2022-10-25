@@ -1,6 +1,9 @@
 <?php
 session_start();
+$_SESSION['batata'] = "Eu sou uma batata, olha!";
 print_r($_SESSION);
+print($_SESSION['batata']);
+print($_SESSION['batata']);
 
 //DANDO ERRO
 // if((!isset($_SESSION['matricula']) == true) and (!isset($_SESSION['senha']) == true)) {

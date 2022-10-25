@@ -1,5 +1,6 @@
 <?php
 include_once("conexao.php");
+
 if (isset($_POST['submit']) && !empty($_POST['matricula']) && !empty($_POST['senha'])) {
     //Acessa
     $matricula = $_POST['matricula'];
@@ -15,7 +16,7 @@ if (isset($_POST['submit']) && !empty($_POST['matricula']) && !empty($_POST['sen
     $result = $conexao->query($sql);
     // print_r($sql);
     // print_r($result);
-    
+
     //Se não existir nenhuma linha no banco desse usuário, então não faz nada
     if (mysqli_num_rows($result) < 1) {
         //Caso não tenha nenhum email e senha no banco, a sessão da matricula e da senha serão destruídas
@@ -26,7 +27,7 @@ if (isset($_POST['submit']) && !empty($_POST['matricula']) && !empty($_POST['sen
         //Se existir, o usuário é redirecionado para a página principal do sistema
         $_SESSION['matricula'] = $matricula;
         $_SESSION['senha'] = $senha;
-        header('Location: sistema.php');
+        header('Location: ./sistema.php');
     }
 } else {
     //Não acessa
