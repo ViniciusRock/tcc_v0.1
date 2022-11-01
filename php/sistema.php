@@ -1,19 +1,15 @@
 <?php
 session_start();
-$_SESSION['batata'] = "Eu sou uma batata, olha!";
-print_r($_SESSION);
-print($_SESSION['batata']);
-print($_SESSION['batata']);
 
-//DANDO ERRO
-// if((!isset($_SESSION['matricula']) == true) and (!isset($_SESSION['senha']) == true)) {
-//     unset($_SESSION['matricula']);
-//     unset($_SESSION['senha']);
-//     header('Location: ../logar.html');
-// }
-//     $logado = $_SESSION['matricula'];
-//caso existir:
-
+// && isset($_SESSION['nome']) não funfa
+if (isset($_SESSION['matricula'])) {
+    echo "Bem-vindo(a)" . $_SESSION['nome'];
+    echo "Nº Matrícula:" . $_SESSION['matricula'];
+} else {
+    unset($_SESSION['login']);
+    unset($_SESSION['senha']);
+    header('Location: 404.php');
+}
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -28,6 +24,8 @@ print($_SESSION['batata']);
 
 <body>
     <h1>Acessou o sistema</h1>
+
+    <a href="./sair.php">Sair do Sistema
 </body>
 
 </html>

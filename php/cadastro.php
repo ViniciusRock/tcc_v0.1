@@ -1,5 +1,6 @@
 <?php
-include_once("conexao.php");
+session_start();
+include("conexao.php");
 
 $nome = $_POST['nome'];
 $celular = $_POST['celular'];

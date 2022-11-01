@@ -1,35 +1,31 @@
 <?php
-include_once("conexao.php");
+session_start();
+include("conexao.php");
 
 if (isset($_POST['submit']) && !empty($_POST['matricula']) && !empty($_POST['senha'])) {
-    //Acessa
+    //Cria as variáveis para testar o select no banco e criar a sessão para logar no sistema
     $matricula = $_POST['matricula'];
     $senha = $_POST['senha'];
-
-    //Escrever os dados que enviei por POST
-    print_r('Matricula: ' . $matricula . '<br>');
-    print_r('Senha: ' . $senha . '<br>');
+    $nome = $_POST['nome'];
 
     //Checar se tem os dados inseridos via post no banco
     $sql = "SELECT * FROM aluno WHERE matricula = '$matricula' and senha = '$senha'";
-
+    $puxanome = "SELECT nome FROM aluno WHERE matricula = '$matricula'";
     $result = $conexao->query($sql);
-    // print_r($sql);
-    // print_r($result);
+    $result2 = $conexao->query($puxanome);
 
-    //Se não existir nenhuma linha no banco desse usuário, então não faz nada
-    if (mysqli_num_rows($result) < 1) {
-        //Caso não tenha nenhum email e senha no banco, a sessão da matricula e da senha serão destruídas
-        unset($_SESSION['matricula']);
-        unset($_SESSION['senha']);
-        header("Location: ../logar.html");
-    } else {
-        //Se existir, o usuário é redirecionado para a página principal do sistema
+    //PAREI AQUI
+    if ((mysqli_num_rows($result) > 0)) {
         $_SESSION['matricula'] = $matricula;
         $_SESSION['senha'] = $senha;
-        header('Location: ./sistema.php');
+        $_SESSION['nome'] = $nome;
+        header("Location: sistema.php");
+    } else {
+        //Não acessa a página e leva para uma página 404.php
+        unset($_SESSION['matricula']);
+        unset($_SESSION['senha']);
+        unset($_SESSION['nome']);
+        echo "SESSAO FINALIZADA";
+        // header('Location: 404.php');
     }
-} else {
-    //Não acessa
-    header('Location: 404.php');
 }
