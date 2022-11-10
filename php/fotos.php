@@ -16,26 +16,14 @@ if (isset($_SESSION['matricula']) && (isset($_SESSION['nome']))) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/meusdados.css">
-    <script>
-        function mudavisual() {
-            // Cor da Fonte
-            // document.h1.style.color = "red";
-            // Texto no centro
-            document.getEementById("#titulo").style.textAlign = "center";
-            //Tamanho da fonte
-            document.getElementsByTagName("h1").style.fontSize = "17pt";
-            // Família da fonte
-            document.getElementById("demo").style.fontFamily = "Poppins,sans-serif";
-        }
-    </script>
     <title>Sistema</title>
 </head>
 
-<body onload="mudavisual()">
+<body>
     <!-- The sidebar -->
     <div class="sidebar">
-        <a class="active" href="sistema.php">Chat</a>
-        <a href="fotos.php">Fotos Câmpus</a>
+        <a href="sistema.php">Chat</a>
+        <a class="active" href="fotos.php">Fotos Câmpus</a>
         <a href="ouvidoria.php">Ouvidoria</a>
         <a href="contato.php">Contato</a>
         <a href="meusdados.php">Meus Dados</a>

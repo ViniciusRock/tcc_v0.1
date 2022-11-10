@@ -24,7 +24,6 @@ body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(-45deg, rgb(63, 100, 222), rgb(19, 154, 69), rgb(220, 253, 87));
 }
-
 .form {
     position: relative;
     top: 50%;
@@ -36,7 +35,6 @@ body {
     width: min-content;
     color: rgb(43, 52, 75);
 }
-
 .title {
     font-size: 1.0em;
     margin-bottom: 10%;
@@ -46,17 +44,12 @@ body {
 .footer{
     font-size: 0.8em;
 }
-
 .input {
     min-width: 280px;
     border-radius: 22px;
     border: 2px #6f7e8a solid;
     padding: 5px;
-    margin: 0px 0px 12px -5px;
- 
-    
-    
-
+    margin: 0px 0px 12px -5px;    
 }
 
 /*Ícones*/

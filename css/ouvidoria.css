@@ -1,0 +1,14 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    font-size:14pt;
+    text-align: center;
+}
+a{
+    font-family: Poppins, sans-serif;
+    display: block;
+    color: black;
+    padding: 16px;
+    font-size:14pt;
+    text-decoration: none;
+    text-align: center;
+}

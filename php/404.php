@@ -20,8 +20,8 @@ session_start();
         </div>
         <div class="text">
             <h1>404</h1>
-            <h2>Página não encontrada!</h2>
-            <h3>Voltar para a Home?</h3>
+            <h3>Faça o login para acessar o sistema!</h3>
+            <h3>Voltar para o login?</h3>
             <a href="../logar.html" class="yes">SIM</a>
             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">NÃO</a>
         </div>

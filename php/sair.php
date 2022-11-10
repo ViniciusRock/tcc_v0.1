@@ -1,10 +1,6 @@
 <?php
 session_start();
 
-?>
-<?php
 session_destroy();
-header('Location: sistema.php');
-
-
+header('Location: ../logar.html');
 ?>
